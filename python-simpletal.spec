@@ -2,7 +2,7 @@
 
 Name:           python-simpletal
 Version:        4.2
-Release:        %mkrel 1
+Release:        %mkrel 2
 
 Summary:        An XML based template processor for TAL, TALES and METAL specifications
 
@@ -40,7 +40,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes.txt LICENSE.txt README.txt examples/
 %dir %{python_sitelib}/simpletal
 %{python_sitelib}/simpletal/*.py
-%{python_sitelib}/simpletal/*.pyc
-%{python_sitelib}/simpletal/*.pyo
 %{python_sitelib}/SimpleTAL-%{version}-py*.egg-info
 
