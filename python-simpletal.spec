@@ -1,8 +1,8 @@
 %define srcname SimpleTAL
 
 Name:           python-simpletal
-Version:        4.2
-Release:        %mkrel 2
+Version:        4.3
+Release:        %mkrel 1
 
 Summary:        An XML based template processor for TAL, TALES and METAL specifications
 
