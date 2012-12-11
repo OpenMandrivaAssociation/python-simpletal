@@ -42,3 +42,32 @@ rm -rf $RPM_BUILD_ROOT
 %{python_sitelib}/simpletal/*.py
 %{python_sitelib}/SimpleTAL-%{version}-py*.egg-info
 
+
+
+%changelog
+* Sat Feb 05 2011 Guillaume Rousse <guillomovitch@mandriva.org> 4.3-1mdv2011.0
++ Revision: 636248
+- update to new version 4.3
+
+* Tue Nov 02 2010 Crispin Boylan <crisb@mandriva.org> 4.2-2mdv2011.0
++ Revision: 591782
+- Rebuild
+
+* Sun Jan 10 2010 Guillaume Rousse <guillomovitch@mandriva.org> 4.2-1mdv2010.1
++ Revision: 489193
+- update to new version 4.2
+
+* Tue Sep 15 2009 Thierry Vignaud <tv@mandriva.org> 4.1-3mdv2010.0
++ Revision: 442485
+- rebuild
+
+* Fri Dec 26 2008 Crispin Boylan <crisb@mandriva.org> 4.1-2mdv2009.1
++ Revision: 319400
+- Rebuild for python2.6
+
+* Thu Dec 04 2008 Crispin Boylan <crisb@mandriva.org> 4.1-1mdv2009.1
++ Revision: 309952
+- Fix summary
+- Based on redhat package
+- create python-simpletal
+
