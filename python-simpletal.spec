@@ -2,7 +2,7 @@
 
 Name:           python-simpletal
 Version:        4.3
-Release:        %mkrel 1
+Release:        2
 
 Summary:        An XML based template processor for TAL, TALES and METAL specifications
 
@@ -16,7 +16,8 @@ BuildArch:      noarch
 BuildRequires:  python-devel
 
 %description
-SimpleTAL is a stand alone Python implementation of the TAL, TALES and METAL  specifications  used in Zope to power HTML and XML templates.
+SimpleTAL is a stand alone Python implementation of the TAL, TALES and METAL 
+specifications used in Zope to power HTML and XML templates.
 
 
 %prep
@@ -27,12 +28,8 @@ CFLAGS="$RPM_OPT_FLAGS" %{__python} setup.py build
 
 
 %install
-rm -rf $RPM_BUILD_ROOT
-%{__python} setup.py install -O1 --skip-build --root $RPM_BUILD_ROOT
+%{__python} setup.py install -O1 --skip-build --root %{buildroot}
 
- 
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 
 %files
