@@ -1,15 +1,15 @@
 %define srcname SimpleTAL
 
 Name:           python-simpletal
-Version:        4.3
-Release:        2
+Version:        5.1
+Release:        1
 
 Summary:        An XML based template processor for TAL, TALES and METAL specifications
 
 Group:          System/Libraries
 License:        BSD
 URL:            http://www.owlfish.com/software/simpleTAL/index.html
-Source0:        http://www.owlfish.com/software/simpleTAL/downloads/%{srcname}-%{version}.tar.gz
+Source0:        http://www.owlfish.com/software/simpleTAL/downloads/SimpleTAL-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildArch:      noarch
@@ -67,4 +67,5 @@ CFLAGS="$RPM_OPT_FLAGS" %{__python} setup.py build
 - Fix summary
 - Based on redhat package
 - create python-simpletal
+
 
