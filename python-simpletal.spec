@@ -2,7 +2,7 @@
 
 Name:           python-simpletal
 Version:        5.1
-Release:        1
+Release:        2
 
 Summary:        An XML based template processor for TAL, TALES and METAL specifications
 
