@@ -8,7 +8,7 @@ Summary:        An XML based template processor for TAL, TALES and METAL specifi
 
 Group:          System/Libraries
 License:        BSD
-URL:            http://www.owlfish.com/software/simpleTAL/index.html
+URL:            https://www.owlfish.com/software/simpleTAL/index.html
 Source0:        http://www.owlfish.com/software/simpleTAL/downloads/SimpleTAL-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
