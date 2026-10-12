@@ -6,14 +6,14 @@ Release:        3
 
 Summary:        An XML based template processor for TAL, TALES and METAL specifications
 
-Group:          System/Libraries
-License:        BSD
-URL:            https://www.owlfish.com/software/simpleTAL/index.html
-Source0:        http://www.owlfish.com/software/simpleTAL/downloads/SimpleTAL-%{version}.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+Group:		Development/Python
+License:	BSD
+URL:		https://www.owlfish.com/software/simpleTAL/index.html
+Source0:	http://www.owlfish.com/software/simpleTAL/downloads/SimpleTAL-%{version}.tar.gz
 
-BuildArch:      noarch
-BuildRequires:  python-devel
+BuildArch:	noarch
+BuildRequires:	pkgconfig(python)
+BuildRequires:	python%{pyver}dist(setuptools)
 
 %description
 SimpleTAL is a stand alone Python implementation of the TAL, TALES and METAL 
@@ -22,6 +22,10 @@ specifications used in Zope to power HTML and XML templates.
 
 %prep
 %setup -q -n %{srcname}-%{version}
+sed -i \
+	-e 's/from distutils.core import setup/from setuptools import setup/' \
+	-e 's/import distutils.core/import setuptools/' \
+	setup.py
 
 %build
 CFLAGS="$RPM_OPT_FLAGS" %{__python} setup.py build
